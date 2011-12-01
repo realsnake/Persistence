@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#define kFileName @"data.plist"
 
+@interface ViewController : UIViewController
+@property (retain, nonatomic) IBOutlet UITextField *field1;
+@property (retain, nonatomic) IBOutlet UITextField *field2;
+@property (retain, nonatomic) IBOutlet UITextField *field3;
+@property (retain, nonatomic) IBOutlet UITextField *field4;
+
+- (NSString *)dataFilePath;
+- (void)applicationWillResignActive:(NSNotification *)notification;
 @end
